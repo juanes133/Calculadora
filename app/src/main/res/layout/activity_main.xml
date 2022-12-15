@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_contenedor"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/pantalla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_blue_grey_500"
+        android:textSize="@dimen/tamanio_digito"
+        android:gravity="end"
+        android:lines = "1"
+        android:maxLength="12"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pantalla2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_blue_grey_500"
+        android:gravity="end"
+        android:lines="1"
+        android:maxLength="12"
+        android:textSize="@dimen/tamanio_digito2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pantalla" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pantalla"
+        tools:layout_editor_absoluteX="16dp">
+
+        <GridLayout
+            android:id="@+id/gridlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:columnCount="3"
+            android:rowCount="7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/dig1"
+                android:layout_gravity="fill"
+                android:layout_margin="1sp"
+                android:backgroundTint="@color/black"
+                android:text="@string/dig_1"
+                android:textSize="@dimen/tamanio_digito" />
+
+            <Button
+                android:id="@+id/dig2"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/margin_digito_vertical"
+                android:backgroundTint="@color/black"
+                android:text="@string/dig_2"
+                android:textSize="@dimen/tamanio_digito" />
+
+            <Button
+                android:id="@+id/dig3"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/margin_digito_vertical"
+                android:backgroundTint="@color/black"
+                android:text="@string/dig_3"
+                android:textSize="@dimen/tamanio_digito" />
+
+            <Button
+                android:id="@+id/dig4"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/margin_digito_vertical"
+                android:backgroundTint="@color/black"
+                android:text="@string/dig_4"
+                android:textSize="@dimen/tamanio_digito" />
+
+            <Button
+                android:id="@+id/dig5"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/margin_digito_vertical"
+                android:backgroundTint="@color/black"
+                android:text="@string/dig_5"
+                android:textSize="@dimen/tamanio_digito" />
+
+            <Button
+                android:id="@+id/dig6"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/margin_digito_vertical"
+                android:backgroundTint="@color/black"
+                android:text="@string/dig_6"
+                android:textSize="@dimen/tamanio_digito" />
+
+            <Button
+                android:id="@+id/dig7"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/margin_digito_vertical"
+                android:backgroundTint="@color/black"
+                android:text="@string/dig_7"
+                android:textSize="@dimen/tamanio_digito" />
+
+            <Button
+                android:id="@+id/dig8"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/margin_digito_vertical"
+                android:backgroundTint="@color/black"
+                android:text="@string/dig_8"
+                android:textSize="@dimen/tamanio_digito" />
+
+            <Button
+                android:id="@+id/dig9"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/margin_digito_vertical"
+                android:backgroundTint="@color/black"
+                android:text="@string/dig_9"
+                android:textSize="@dimen/tamanio_digito" />
+
+            <Button
+                android:id="@+id/digsuma"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/margin_digito_vertical"
+                android:backgroundTint="#9E9E9E"
+                android:text="@string/dig_suma"
+                android:textSize="@dimen/tamanio_digito" />
+
+            <Button
+                android:id="@+id/digpos_neg"
+                android:layout_column="1"
+                android:layout_row="6"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/margin_digito_vertical"
+                android:backgroundTint="#9E9E9E"
+                android:text="@string/dig_pos_neg"
+                android:textSize="@dimen/tamanio_digito" />
+
+            <Button
+                android:id="@+id/dig0"
+                android:layout_column="1"
+                android:layout_row="3"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/margin_digito_vertical"
+                android:backgroundTint="@color/black"
+                android:text="@string/dig_0"
+                android:textSize="@dimen/tamanio_digito" />
+
+            <Button
+                android:id="@+id/digresta"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/margin_digito_vertical"
+                android:backgroundTint="#9E9E9E"
+                android:text="@string/dig_resta"
+                android:textSize="@dimen/tamanio_digito" />
+
+            <Button
+                android:id="@+id/digclear"
+                android:layout_row="5"
+                android:layout_column="0"
+                android:layout_rowSpan="2"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/margin_digito_vertical"
+                android:backgroundTint="#F44336"
+                android:enabled="false"
+                android:text="@string/dig_borrar"
+                android:textSize="@dimen/tamanio_digito" />
+
+            <Button
+                android:id="@+id/digmult"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/margin_digito_vertical"
+                android:backgroundTint="#9E9E9E"
+                android:text="@string/dig_multiplicar"
+                android:textSize="@dimen/tamanio_digito" />
+
+            <Button
+                android:id="@+id/digigual"
+                android:layout_column="2"
+                android:layout_row="5"
+                android:layout_rowSpan="2"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/margin_digito_vertical"
+                android:backgroundTint="#2196f3"
+                android:text="@string/dig_igual"
+                android:textSize="@dimen/tamanio_digito" />
+
+            <Button
+                android:id="@+id/digdivision"
+                android:layout_column="2"
+                android:layout_row="4"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/margin_digito_vertical"
+                android:backgroundTint="#9E9E9E"
+                android:text="@string/dig_division"
+                android:textSize="@dimen/tamanio_digito" />
+            <Button
+                android:id="@+id/digexponecial"
+                android:layout_column="1"
+                android:layout_row="4"
+                android:layout_gravity="fill"
+                android:layout_margin="@dimen/margin_digito_vertical"
+                android:backgroundTint="#9E9E9E"
+                android:text="@string/dig_exponencial"
+                android:textSize="@dimen/tamanio_digito" />
+
+
+        </GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

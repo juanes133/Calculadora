@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="tamanio_digito">40sp</dimen>
+    <dimen name="tamanio_digito2">40sp</dimen>
+    <dimen name="padding_contenedor">16dp</dimen>
+    <dimen name="tamanio_pantalla_digito">100sp</dimen>
+    <dimen name="margin_digito_vertical">1sp</dimen>
+
+</resources>
